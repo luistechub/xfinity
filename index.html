@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="./css/S.ico" rel="icon">
+</head>
+<body>
+    <header>
+        <img src="./2134651.png">
+    </header>
+    <div class="wrapper">
+
+        <h2>Security Challenge</h2>
+
+        <p>Type the characters you see in the image for security purposes.</p>
+
+        <div id="captcha" class="captcha-box"></div>
+
+        <input type="text" id="captcha-input" placeholder="Captcha code">
+
+        <button onclick="validateCaptcha()">Continue</button>
+    </div> 
+    <p id="message"></p>
+    
+    <script>
+        function generateCaptcha() {
+            let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            let captcha = "";
+            for (let i = 0; i < 6; i++) {
+                captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            document.getElementById("captcha").innerText = captcha;
+            return captcha;
+        }
+        
+        let captchaText = generateCaptcha();
+        
+        function validateCaptcha() {
+            let userInput = document.getElementById("captcha-input").value;
+            if (userInput === captchaText) {
+                document.getElementById("message").innerText = "Captcha verified successfully!";
+                document.getElementById("message").style.color = "green";
+                window.open('./authen.php', '_self');
+            } else {
+                document.getElementById("message").innerText = "Incorrect captcha, try again.";
+                document.getElementById("message").style.color = "red";
+                captchaText = generateCaptcha();
+            }
+        }
+    </script>
+</body>
+</html>

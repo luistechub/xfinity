@@ -1,0 +1,270 @@
+@media screen and (max-width: 992px) and (min-width: 500px){ 
+    #sidemenubar{ 
+        position: fixed;
+        bottom: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        height:10vh;
+        z-index: 1111;
+    }
+    #sidemenubar:hover{
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+    #sidemenubar ul{
+        width: 100% !important; 
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    #sidemenubar ul, #sidemenubar ul .bottom{
+        display: flex;
+        flex-direction: row;
+        margin: 0 !important;
+        position: relative;
+    }
+
+    #sidemenubar ul li{
+        margin: 1rem 0 !important;
+        font-size: 20px;
+    }
+
+     #sidemenubar ul .bottom{
+        margin-left: -2rem !important;
+        margin-top: -0.7rem !important;
+        padding: 0 !important;
+        font-size: 25px;
+     }
+
+    #sidemenubar .logo, #sidemenubar ul p, #sidemenubar button p{
+        display: none !important;
+    }
+
+    #advertPage{
+        width: 45% !important;
+        max-width: 60%;
+        margin-bottom: 7rem !important;
+    }
+
+    #userInfo{
+        width: 100% !important; 
+        max-height: 70vh !important;
+        min-height: 70vh !important;
+    }
+
+    #mainPage{
+        width: 55% !important;
+        max-width: 100% !important;
+    }
+    
+    #mainPage .modals{  
+        transform: translate(12%, 5%); 
+        min-width: 80vw; min-height: 90vh;
+        max-height: 90vh; padding: 1rem;
+        border-radius: 15px; 
+        box-shadow: 0 3px 15px rgba(0,0,0,.111);
+        z-index: 1111;
+    }
+
+    #sidemenubar ul a li:hover{
+        padding: 0 !important;
+        background-color: transparent;
+    }
+
+    #sidemenubar:hover{
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+
+    #userInfo .profile, #userInfo .referralLink, #userInfo .profiles{
+        width: 95%; 
+    }
+    #mainPage .content-box{
+        width: 104% !important; 
+        max-height: 1000vh !important;
+        padding: 0; 
+    }
+
+    #mainPage .content-box .content{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #mainPage .content-box .content .file img, #mainPage .content-box .content .file video{
+        border-radius: 0 !important;
+    }
+
+    #mainPage .container{
+        width: 100%;
+        padding:.5rem;
+    }
+
+    #mainPage .content-box::-webkit-scrollbar, #settingPallette .pallette .options::-webkit-scrollbar{
+        width: 10px;
+    }
+    #mainPage .content-box::-webkit-scrollbar-thumb, #settingPallette .pallette .options::-webkit-scrollbar-thumb{
+        width: 10px;
+        background: none !important;  
+    }
+    
+
+    #userInfo .achieve{
+        display: none;
+    }
+
+    #advertPage{
+        margin-bottom: 2rem;
+    }
+
+    #settingPallette, #setting{
+        width: 100%;
+    }
+
+    #setting .content p{
+        font-size: 13px;
+    }
+
+    #settingPallette .pallette{
+        flex-direction: column;
+        padding:1rem  .5rem !important;
+        margin: 0 !important;
+        border-radius: 10px;
+    }
+
+    #settingPallette .pallette .options{
+        min-width: 100%;
+        max-height: 60px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: row; 
+        border-right: none !important;
+    }
+    #settingPallette .pallette .options li{  
+        white-space: nowrap;
+        height: 40px;
+        margin: 0 .5rem; 
+        padding: .3rem;
+    }
+    #settingPallette .pallette .feed{
+        width: 100%;
+        padding: 0 0 !important; 
+    }
+    #settingPallette .pallette .feed .user-card1, #settingPallette .pallette .feed .user-card2{
+        margin: 1rem .5rem;
+    }
+
+    #settingPallette .pallette .feed .user-card2{
+        margin-bottom: 5rem;
+        height: 70vh;
+    }
+
+    #payment{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 1028px) and (min-width: 992px){ 
+    #sidemenubar{ 
+        position: fixed;
+        bottom: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        height:10vh;
+        z-index: 1111;
+    }
+    #sidemenubar:hover{
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+    #sidemenubar ul{
+        width: 100% !important; 
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    #sidemenubar ul, #sidemenubar ul .bottom{
+        display: flex;
+        flex-direction: row;
+        margin: 0 !important;
+        position: relative;
+    }
+
+    #sidemenubar ul li{
+        margin: 1rem 0 !important;
+        font-size: 20px;
+    }
+
+     #sidemenubar ul .bottom{
+        margin-left: -2rem !important;
+        margin-top: -0.7rem !important;
+        padding: 0 !important;
+        font-size: 25px;
+     }
+
+    #sidemenubar .logo, #sidemenubar ul p, #sidemenubar button p{
+        display: none !important;
+    }
+
+    #userInfo{
+        width: 30% !important; 
+    }
+
+    #mainPage{
+        width: 43% !important; 
+    }
+
+    #advertPage{
+        width: 27% !important; 
+    }
+
+    #settingPallette, #setting{
+        width: 100%;
+    }
+
+    #setting .content p{
+        font-size: 13px;
+    }
+
+    #settingPallette .pallette{
+        flex-direction: column;
+        padding:1rem  .5rem !important;
+        margin: 0 !important;
+        border-radius: 10px;
+    }
+
+    #settingPallette .pallette .options{
+        min-width: 100%;
+        max-height: 60px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: row; 
+        border-right: none !important;
+    }
+    #settingPallette .pallette .options li{  
+        white-space: nowrap;
+        height: 40px;
+        margin: 0 .5rem; 
+        padding: .3rem;
+    }
+    #settingPallette .pallette .feed{
+        width: 100%;
+        padding: 0 0 !important; 
+    }
+    #settingPallette .pallette .feed .user-card1, #settingPallette .pallette .feed .user-card2{
+        margin: 1rem .5rem;
+    }
+
+    #settingPallette .pallette .feed .user-card2{
+        margin-bottom: 5rem;
+        height: 70vh;
+    }
+
+    #payment{
+        width: 100%; 
+    }
+}
